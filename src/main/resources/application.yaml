@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: account
+  datasource:
+    url: jdbc:postgresql://localhost:5432/accountservice?currentSchema=bank
+    username: postgres
+    password: Gukm5998
+  security:
+    user:
+      name:
+      password:
+  flyway:
+    baseline-on-migrate: true
+
+
+jwt:
+  secret: YWRhcGRra29rc2xzZGtvZWtkZGxrdm1pbWlmanZrZnZtZm12bWdqa3ZkanNvaWZqaW9jbXNka2xjdmtm
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host.docker.internal:8888/eureka/
